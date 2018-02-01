@@ -33,17 +33,17 @@ git status
 git fetch
 git merge
 
-# Add all you want to stage
+# Add all form your workspace, you want, to stage
 git add <files>
 git add folder/
 git add . (actuall and subfolder)
 git reset HEAD (File, Folder,..) to unstage
 git rm --cached <file>..." to unstage
 
-# Check what commit for stage to local repo
+# Check what will by commit local repo form your stage
 git status
 
-# Commit all stage changes to local repo
+# Commit all stage changes to local git
 git commit -m "Title" -m "Description ..........";
 
 # Get changes from remote repo
@@ -59,4 +59,7 @@ git stash --include-untracked
 git stash list
 git stash pop
 
-
+# Setting your username in Git
+git config --global user.name "Mona Lisa"
+# Show your username in Git
+git config --global user.name
