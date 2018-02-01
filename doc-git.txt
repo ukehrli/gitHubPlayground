@@ -2,6 +2,14 @@
 # git commands
 uk 2018.01.19
 
+# ------- Please set first your identity to track changes to the right person!
+# Setting your username in Git
+git config --global user.name "Mona Lisa"
+git config --global user.email you@example.com
+# Show your username in Git
+git config --global user.name
+git config --global user.email
+
 # explore first the git enviroment before do add, commit, checkout,fetch, push, pull
 
 # ------- Local workspace, stage, git repository (add, commit, ...)
@@ -58,10 +66,3 @@ git push
 git stash --include-untracked
 git stash list
 git stash pop
-
-# Setting your username in Git
-git config --global user.name "Mona Lisa"
-git config --global user.email you@example.com
-# Show your username in Git
-git config --global user.name
-git config --global user.email
