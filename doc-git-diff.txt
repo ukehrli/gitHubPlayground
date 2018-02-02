@@ -1,0 +1,32 @@
+
+# git commands
+uk 2018.02.02
+
+# ------- Show zwischen commits&branches&files
+git diff            // View difference between Stage and Working Directory
+git diff --cached   /View difference between HEAD and Stage
+git diff HEAD       //View difference between HEAD and Working Directory
+git diff <masterbranch_path> <remotebranch_path>
+
+Explain:
+                      HEAD (The pointer)
+  get diff c3 c4      master
+c1 -- c2 --c3 -- c4 -- c5 (local git)
+     git diff --cached c5 --> diff to stage(Index)
+         git diff HEAD c5 --> diff to Working Directory
+
+Example diff branchs (local /remote):
+# ------ What are my local branches and how they mapped to remote branches (The active shows a star)
+git branch --list -vv
+git remote show origin
+
+# ------ With that branch info do:
+git diff master origin/master
+
+Example diff commits (local / remote):
+
+
+Example diff files:
+
+
+

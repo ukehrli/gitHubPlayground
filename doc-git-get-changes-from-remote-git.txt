@@ -1,0 +1,14 @@
+
+# git commands
+uk 2018.01.19
+
+#------ Implement from remote repo into your workspace (origin == remote repository and master is the remote branch)
+git fetch origin master
+git diff --name-only master origin/master //what files we get form remote repo
+git merge origin master
+
+#------ Fast but dangers: Implement from remote repo into your workspace
+git pull origin master
+(does a git fetch followed by a git merge)
+
+
