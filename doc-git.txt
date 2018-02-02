@@ -60,13 +60,3 @@ git merge
 
 # Add local repo changes to remote repo
 git push
-<<<<<<< Updated upstream
-
-# ------------ Stashing
-# Stashing: Backup my workspace! So I can recover if things go wrong. Stashing
-git stash --include-untracked
-git stash list
-git stash pop
-
-=======
->>>>>>> Stashed changes
