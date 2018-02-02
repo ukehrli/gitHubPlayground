@@ -1,0 +1,64 @@
+
+# git commands
+uk 2018.01.19
+
+# ------- Please set first your identity to track changes to the right person!
+# Setting your username in Git
+git config --global user.name "Mona Lisa"
+git config --global user.email you@example.com
+# Show your username in Git
+git config --global user.name
+git config --global user.email
+
+# explore first the git enviroment before do add, commit, checkout,fetch, push, pull
+
+# ------- Local workspace, stage, git repository (add, commit, ...)
+# What changes in the workspace are not commit?
+git status
+
+# What ist the differences between the workspace and my git for a file? (Use Webstorm repo to have best overview)
+git diff foo.txt
+
+# What changes are commit in that git tracked project
+git log --online --decorate
+git --graph (Use Webstorm repo to have best overview)
+
+# What are my local branches and how they mapped to remote branches (The active shows a star)
+git branch --list -vv
+git remote show origin
+
+# ------- The remote git repository (fetch, pusch, pull,..
+# Waht is my git remote repo
+git remote -- verbose
+# What branches exists in remote repo.
+git branch --list --remote --verbose
+
+# ------- How do I check in my changes
+# What is not on stage
+git status
+
+# Get changes from remote repo
+git fetch
+git merge
+
+git pull origin master
+
+# Add all form your workspace, you want, to stage
+git add <files>
+git add folder/
+git add . (actuall and subfolder)
+git reset HEAD (File, Folder,..) to unstage
+git rm --cached <file>..." to unstage
+
+# Check what will by commit local repo form your stage
+git status
+
+# Commit all stage changes to local git
+git commit -m "Title" -m "Description ..........";
+
+# Get changes from remote repo
+git fetch
+git merge
+
+# Add local repo changes to remote repo
+git push
