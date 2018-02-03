@@ -1,0 +1,16 @@
+
+# git commands
+uk 2018.01.19
+
+# ------- Remove files from git&stage(Index)&fworkspace system
+git rm <file name>
+git rm -r <folder name> // folder
+git commit -m "remove file1.txt"
+
+# ------- Remove files from git NOT from stage(Index)&fworkspace system
+git rm --cached <file name>
+git rm --cached <folder name>
+git commit -m "remove file1.txt"
+
+# ------- Update remote git repo
+git push origin <branch_name>

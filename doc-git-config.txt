@@ -18,13 +18,13 @@ git status
 
 # What changes are commit in that git tracked project
 git log --online --decorate
-git --graph (Use Webstorm repo to have best overview)
+git log --graph
 
 # What are my local branches and how they mapped to remote branches (The active shows a star)
 git branch --list -vv
 git remote show origin
 
-# ------- The remote git repository (fetch, pusch, pull,..
+# ------- The remote git repository (fetch, pusch, pull,..)
 # Waht is my git remote repo
 git remote -- verbose
 # What branches exists in remote repo.

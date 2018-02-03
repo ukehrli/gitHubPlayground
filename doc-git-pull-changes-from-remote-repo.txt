@@ -3,12 +3,12 @@
 uk 2018.01.19
 
 #------ Implement from remote repo into your workspace (origin == remote repository and master is the remote branch)
-git fetch origin master
-git diff --name-only master origin/master //what files we get form remote repo
-git merge origin master
+git fetch origin develop
+git diff --name-only develop origin/develop //what files we get form remote repo
+git merge origin develop
 
 #------ Fast but dangers: Implement from remote repo into your workspace
-git pull origin master
+git pull origin develop
 (does a git fetch followed by a git merge)
 
 

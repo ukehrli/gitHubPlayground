@@ -1,9 +1,0 @@
-
-# git commands
-uk 2018.02.02
-
-#------ Let's integrate the changes from our "dev" branch into "master":
-git checkout master //checkout master (prod)
-git merge dev //merge master (prod) with dev branch
-
-

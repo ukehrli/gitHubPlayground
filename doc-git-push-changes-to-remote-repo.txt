@@ -37,10 +37,14 @@ git branch --list --remote --verbose
 # What is not on stage
 git status
 
-# Get changes from remote repo
-git fetch
-git merge
+# Implement from remote repo into your workspace (origin == remote repository and master is the remote branch)
+git fetch origin develop
+git diff --name-only develop origin/develop //what files we get form remote repo
+git merge origin develop
 
+# Fast but dangers: Implement from remote repo into your workspace
+git pull origin develop
+(does a git fetch followed by a git merge)
 git pull origin master
 
 # Add all form your workspace, you want, to stage
@@ -56,9 +60,14 @@ git status
 # Commit all stage changes to local git
 git commit -m "Title" -m "Description ..........";
 
-# Get changes from remote repo
-git fetch
-git merge
+# Implement from remote repo into your workspace (origin == remote repository and master is the remote branch)
+git fetch origin develop
+git diff --name-only develop origin/develop //what files we get form remote repo
+git merge origin develop
+
+# Fast but dangers: Implement from remote repo into your workspace
+git pull origin develop
+(does a git fetch followed by a git merge)
 
 # Add local repo changes to remote repo
-git push
+git push origin develop

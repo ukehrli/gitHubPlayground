@@ -1,0 +1,9 @@
+
+# git commands
+uk 2018.02.02
+
+#------ Let's integrate the changes from our "feature/my-feature" branch into "develop":
+git checkout develop //checkout develop (master)
+git merge develop //merge develop (master) with feature/my-featur branch
+
+
