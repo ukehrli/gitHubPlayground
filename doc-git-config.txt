@@ -1,6 +1,6 @@
 
 # git commands
-uk 2018.01.19
+uk 2018.01.19 / Test slack
 
 # ------- Please set first your identity to track changes to the right person!
 # Setting your username in Git
