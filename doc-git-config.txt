@@ -18,7 +18,7 @@ git status
 
 # What changes are commit in that git tracked project
 git log --online --decorate
-git log --graph
+gitlog --graph
 
 # What are my local branches and how they mapped to remote branches (The active shows a star)
 git branch --list -vv
